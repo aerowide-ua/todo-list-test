@@ -39,3 +39,22 @@ p {
     width: 10%;
 }
 .nomargin {margin: 0;}
+#step {
+    float:right;
+    width:10%;
+}
+#steps {
+    width: 40px;
+    float:right;
+    margin-left: 10px;
+}
+#steptext {
+    float: right;
+}
+#clear {
+    display: none;
+}
+#lang {
+    float: left;
+    width: 10%;
+}
