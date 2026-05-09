@@ -7,7 +7,7 @@
     border: 1px solid black;
     padding:5px;
 }
-ul {
+ol {
     width: 100%;
     padding: 0;
 }
@@ -20,7 +20,6 @@ p {
     text-align: center;
     width: 100%;
 }
-#list {list-style: none;}
 
 .x_btn {
     float: right;
