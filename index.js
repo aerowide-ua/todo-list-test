@@ -3,6 +3,8 @@ let clearBtn = document.getElementById("clear");
 let stepsize = document.getElementById("steps");
 clearBtn.onclick = clear;
 let counter = 1;
+
+// language changer (now with no alerts!!!)
 function language(q) {
     if (q===1) {
         document.getElementById("header").innerHTML = "To-do List";
@@ -10,7 +12,6 @@ function language(q) {
         document.getElementById("add").innerHTML = "Add";
         document.getElementById("steptext").innerHTML = "Steps: ";
         document.getElementById("clear").innerHTML = "Clear";
-        alert("!")
     }
     if (q===2) {
         document.getElementById("header").innerHTML = "Список справ";
@@ -20,13 +21,10 @@ function language(q) {
         document.getElementById("clear").innerHTML = "Очистити";
     }
 }
-function add(){
+function add() {
     let goal = document.getElementById("textbox");
-    if (goal.value == "") {
-        return
-    }
+    if (goal.value == "") { return; }
     else {
-
         // task container :P
         let task = document.createElement("li");
         task.id = "task" + String(counter);
