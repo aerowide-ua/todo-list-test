@@ -18,7 +18,6 @@ function language(q) {
         document.getElementById("add").innerHTML = "Додати";
         document.getElementById("steptext").innerHTML = "Кроки: ";
         document.getElementById("clear").innerHTML = "Очистити";
-        alert("!")
     }
 }
 function add(){
@@ -35,7 +34,7 @@ function add(){
 
         // task name fresh from the input
         let task_text = task.appendChild(document.createElement("p"));
-        task_text.innerHTML = String(counter) + ". " + goal.value;
+        task_text.innerHTML = goal.value;
         task_text.className = "nomargin";
 
         // the evil X button
@@ -71,7 +70,6 @@ function add(){
         progress.addEventListener("input", function () {
             prog.innerHTML = progress.value + "%";
             if (progress.value == 100) {
-                // alert("Task " + String(this.id.slice(14)) + " is completed!");
                 task_text.style.textDecoration = "line-through";
             } else {
                 task_text.style.textDecoration = "none";
